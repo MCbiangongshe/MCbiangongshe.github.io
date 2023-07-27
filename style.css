@@ -1,12 +1,10 @@
 body{
+    background-image: url(背景图片1.png);
     height: 100vh;
     width: 100vw;
     margin: 0;
     padding: 0;
     font-family: "montserrat";
-    background-image: linear-gradient(45deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
-    background-size: 400%;
-    animation: bganimation 15s infinite;
     background-attachment: fixed;
     overflow-x:hidden;
 }
@@ -87,6 +85,34 @@ a{
     color:black;
 }
 
+.news_card{
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    height:200px;
+    width:80%;
+    border-radius:25px;
+    background-color: white;
+    color:black;
+}
+
+.news_card_right{
+    padding-top:20px;
+    float:right;
+    width:60%;
+    color:black;
+}
+
+.news_card_left{
+    text-align:left;
+    float:left;
+    height:200px;
+    width:40%;
+    border-radius:25px;
+    background-color: white;
+    color:black;
+}
+
 .con_card{
     display: flex;
     justify-content: center;
@@ -98,7 +124,87 @@ a{
     color:black;
 }
 
+.body_index{
+    line-height:22px;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    height:500px;
+    width:80%;
+    border-radius:25px;
+    background-color: white;
+    color:black;
+}
+
+.body_index_left{
+    padding-top: 40px;
+    width: 40%;
+    height:100%;
+    float:left;
+}
+
+.body_index_right{
+    width:60%;
+    height:100%;
+    float:right;
+}
+
+.body_btn{
+    width:300px;
+    height:60px;
+    background-color: rgb(41, 41, 41);
+    color: #dddddd;
+    border-radius:10px;
+    float:left;
+    font-size: 15px;
+    margin-left:120px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body_btn_left{
+    width:20%;
+    height:100%;
+    float:left;
+    margin-left:3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body_btn_right{
+    width:80%;
+    height:100%;
+    float:right;
+    text-align: left;
+    display: flex;
+    padding-top: 15px;
+}
+
+.body_btn:hover{
+    transition: all 0.4s;
+    transform: scale(1.5);
+}
+
+.body_txt{
+    font-family:"仿宋";
+    width:400px;
+    height:60px;
+    color: rgb(41, 41, 41);
+    border-radius:25px;
+    text-align: center;
+    font-size: 40px;
+    float:left;
+    margin-left:60px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
 .body_introduce{
+    line-height:22px;
     display: flex;
     justify-content: center;
     margin:auto;
@@ -125,16 +231,8 @@ a{
     font-size: 40px;
     width:auto;
     text-align: center;
-    height: 800px;
+    height: 200px;
     color: white;
-    justify-content: center;
-    align-items: center;
-}
-
-.head_subtitle{
-    color: white;
-    font-size: 20px;
-    text-align: center;
     justify-content: center;
     align-items: center;
 }
@@ -182,13 +280,43 @@ a{
 }
 
 .head_btn{
-    width:15%;
+    width:8%;
     height: 100%;
+    font-size: 10px;
     float:right;
-    color:white;
-    border:1px solid #000; 
-    border-top:none;
-    border-bottom: none;
+    color:rgb(41, 41, 41);
+    border:none; 
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.head_btn_txt{
+    width:100%;
+    background-color: none;
+    height: auto;
+    color: rgb(41, 41, 41);
+    border:none; 
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.head_btn_txt:hover{
+    transition: all 0.4s;
+    transform: scale(1.4);
+}
+
+
+.head_index_btn{
+    background-color: rgb(41, 41, 41);
+    font-size: 10px;
+    color:#dddddd;
+    width:40%;
+    height: 70%;
+    border-radius:25px;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -197,7 +325,7 @@ a{
 
 .head_top{
     width:100%;
-    background-color: #2c3e50;
+    background-color: #dddddd;
     opacity:0.5;
     height: 40px;
     z-index: 999;
